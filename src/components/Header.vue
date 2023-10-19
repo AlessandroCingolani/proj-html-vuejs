@@ -15,7 +15,7 @@
       <div class="ac_md-container">
         <nav class="d-flex justify-content-between h-100 align-items-center">
 
-          <div>logo</div>
+          <div><img src="/public/images/dark-logo.png" alt=""></div>
 
           <!-- Fixare inline block  -->
           <ul class="d-flex h-100 align-items-center ">
