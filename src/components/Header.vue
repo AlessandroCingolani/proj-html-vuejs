@@ -7,14 +7,18 @@
 
 <template>
   <header>
-    <div class="text-center">timing ticket</div>
-    <div class="container-fluid">
+    <div class="timing-ticket d-flex justify-content-center align-items-center">timing ticket
+      <button class="ac_btn">Get ticket</button>
+    </div>
+
+    <div class="container-fluid debug-box">
       <div class="ac_md-container">
-        <nav class="d-flex justify-content-between">
+        <nav class="d-flex justify-content-between h-100 align-items-center">
 
           <div>logo</div>
 
-          <ul class="d-inline-block">
+          <!-- Fixare inline block  -->
+          <ul class="d-flex h-100 align-items-center ">
             <li>Home</li>
             <li>Pages</li>
             <li>Courses</li>
@@ -24,11 +28,10 @@
           </ul>
 
           <div>
-            <i>icona</i>
-            <i>icona</i>
-            <i>icona</i>
-            <i>icona</i>
-            <i>icona</i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
           </div>
 
         </nav>
@@ -42,6 +45,14 @@
 
 <style lang="scss" scoped>
 @use '../../scss/partials/general'as *;
+@use '../../scss/partials/vars' as * ;
+  .timing-ticket {
+    height: 50px;
+    background-color: $background-white-palette;
+  }
 
+  .ac_md-container {
+    height: 80px;
+  }
 
 </style>
