@@ -20,22 +20,29 @@
 }
 
 
-ul li {
-  list-style: none;
+ul {
+  padding: 0;
+  margin: 0;
+  li {
+    list-style: none;
+  }
 }
 
-img {
-  max-width: 100%;
-}
+
 
 // btn 
 
 .ac_btn {
   color: white;
   background-color: $orange-palette;
-  padding: 3px 20px;
+  padding: 5px 35px;
   border-radius: 10px;
+  border: none;
   cursor: pointer;
+  span {
+    font-size: .8rem;
+    font-weight: 800;
+  }
   &:hover {
     background-color: $sky-blue-palette;
     transition: .2s all;
