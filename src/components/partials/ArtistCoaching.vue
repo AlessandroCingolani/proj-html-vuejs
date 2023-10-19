@@ -6,7 +6,7 @@
 
 <template>
   <!-- sezione 1 -->
-  <section>
+  <section id="artist-coaching">
       <div class="container-fluid">
         <div class="ac_sm-container text-center ">
           <div class="title-section">
@@ -46,4 +46,9 @@
  @use '../../../scss/partials/general' as *;
  @use '../../../scss/partials/vars' as *;
 
+  #artist-coaching {
+    background-image: url('/public/images/maxcoach-shape-03.png');
+    background-position: center;
+    background-size: cover;
+  }
 </style>
