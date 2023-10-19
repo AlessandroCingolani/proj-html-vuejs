@@ -74,10 +74,72 @@ import Jumbotron from './partials/Jumbotron.vue';
         </div>
       </div>
     </section>
+
+
+    <!-- slider da fare componente -->
+    <section id="testimonials">
+      <i>Testimonials</i>
+      <h4>Why do people love me?</h4>
+      <!-- slider -->
+      <div class="row w-100 justify-content-center ">
+        <div class="col-4">
+          <div class="card">
+            <h5>High level of eficiency and scientific teaching methods</h5>
+            <p>I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.</p>
+            <div class="profile d-flex">
+              <div class="avatar">
+                <img src="/public/images/artist-testimonial-avatar-04.jpg" alt="">
+              </div>
+              <div class="profile-data">
+                <h6>Name</h6>
+                <span>Role</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- corsi da fare card da buttare dentro -->
+    <section id="artist-coaching">
+      <div class="ac_md-container">
+        <div class="title text-center ">
+          <i>Artist coaching</i>
+          <h5>Latest online courses</h5>
+        </div>
+        <div class="row">
+          <div class="ac_col">
+            <div class="card" style="width: 18rem;">
+              <img src="/public/images/artist-course-08-480x480.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
   </main>
 </template>
 
 
-<style lang="scss">
+<style lang="scss" scoped>
   @use '../../scss/partials/general'as *;
+
+  #testimonials {
+    background-color: rgb(250, 248, 246);
+      .card {
+        padding: 30px;
+        .profile {
+          img {
+            width: 50px;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+
+
 </style>
