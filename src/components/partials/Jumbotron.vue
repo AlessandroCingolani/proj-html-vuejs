@@ -14,16 +14,17 @@
       <img class="artist-hero" src="/public/images/artist-hero-image-01.jpg" alt="artist-hero-image-01">
     </div>
 
-    <div class="artist-jumbo w-25 text-center">
+    <div class="artist-jumbo text-center">
       <i>Hello,Im martin</i>
       <h4>Artist Coaching And Mentoring Might Be for You.</h4>
-      <button class="ac_btn">Get started today</button>
+      <button class="ac_btn"><span>Get started today</span></button>
     </div>
     <div class="collage-right h-100">
       <img class="background" src="/public/images/artist-shape-01-600x577.png" alt="artist-shape-01">
       <img class="artist" src="/public/images/artist-hero-image-04.jpg" alt="artist-hero-image-04">
-      <img src="/public/images/artist-shape-04.png" alt="artist-shape-04.png">
-      <img src="/public/images/artist-shape-05.png" alt="artist-shape-05.png">
+      <img class="feather" src="/public/images/artist-shape-04.png" alt="artist-shape-04.png">
+      <img class="paint" src="/public/images/artist-shape-05.png" alt="artist-shape-05.png">
+      <img class="max-coach" src="/public/images/maxcoach-shape-12-150x150.png" alt="artist-shape-05.png">
     </div>
   </section>
 </template>
@@ -39,34 +40,37 @@
     height: 740px;
     .collage-left {
       position: relative;
-      width: 37%;
+      width: 40%;
       height: 100%;
       
       .background {
         position: absolute;
+        width:100%;
         top: 0;
         left: 0;
       }
       .artist {
         position: absolute;
-        bottom: 20px;
+        bottom: 60px;
         left: 300px;
       }
       .background-spheres {
         position: absolute;
-        top: 100px;
+        top: 120px;
         left: 0;
         z-index: 1;
       }
       .paint-art {
         position: absolute;
-        top: 50px;
-        left: 200px;
+        top: 67px;
+        left: 180px;
+        z-index: 2;
       }
       .artist-hero {
         position: absolute;
-        bottom: 50px;
-        left: 210px;
+        bottom: 100px;
+        left: 0;
+        z-index: 3;
       }
     }
 
@@ -76,18 +80,36 @@
 
     .collage-right {
       position: relative;
-      width: 37%;
+      width: 40%;
       height: 100%;
       .background {
         position: absolute;
+        width: 100%;
         top:0;
         right: 100px;
       }
       .artist {
         position: absolute;
-        bottom:0;
+        bottom:30px;
+        right: 50px;
+        z-index: 2;
+      }
+      .feather {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        z-index: 1;
+      }
+      .paint {
+        position: absolute;
+        bottom: -10px;
         right: 0;
       }
-    }
+      .max-coach {
+        position: absolute;
+        bottom: 18px;
+        right: 200px;
+      }
+    } 
   }
 </style>
