@@ -1,0 +1,15 @@
+@use './scss/partials/vars'as *;
+
+.ac_md-container {
+  width: 80% ;
+  margin: 0 auto;
+}
+
+.ac_sm-container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+ul li {
+  list-style: none;
+}

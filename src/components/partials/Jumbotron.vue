@@ -5,7 +5,7 @@
 </script>
 
 <template>
-  <section>jumbotron</section>
+  <section class="text-center">jumbotron</section>
 </template>
 
 
