@@ -1,5 +1,7 @@
 @use './scss/partials/vars'as *;
 
+
+// My containers
 .ac_md-container {
   width: 80% ;
   margin: 0 auto;
@@ -9,7 +11,27 @@
   width: 60%;
   margin: 0 auto;
 }
+// \ My containers
 
 ul li {
   list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+// btn 
+
+.ac_btn {
+  color: white;
+  background-color: $orange-palette;
+  padding: 3px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  &:hover {
+    background-color: $sky-blue-palette;
+    transition: .2s all;
+    scale: 1;
+  }
 }
