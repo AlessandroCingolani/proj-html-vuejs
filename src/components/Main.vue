@@ -1,11 +1,19 @@
 <script>
+import Jumbotron from './partials/Jumbotron.vue';
  export default {
-  name:'Main'
+  name:'Main',
+  components:{
+    Jumbotron
+  }
 }
 </script>
 
 <template>
-  <main>main</main>
+  <main>
+    Main
+    <Jumbotron/>
+    /Main
+  </main>
 </template>
 
 
