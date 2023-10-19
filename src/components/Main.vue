@@ -9,8 +9,8 @@ import Jumbotron from './partials/Jumbotron.vue';
 </script>
 
 <template>
-  <main>
-    Main
+  <main >
+   
     <Jumbotron/>
     <section>
       <div class="container-fluid">
@@ -18,10 +18,8 @@ import Jumbotron from './partials/Jumbotron.vue';
           <i>Artist coaching</i>
           <h4>I understand what it takes to create.I can help you with</h4>
         </div>
-
       </div>
     </section>
-    /Main
   </main>
 </template>
 
