@@ -7,11 +7,11 @@
 <template>
   <section id="Jumbo" class="d-flex justify-content-center align-items-center">
     <div class="collage-left h-100">
-      <img class="background" src="/public/images/artist-shape-02-600x324.png" alt="artist-shape-02">
+      <img class="background" src="/public/images/artist-shape-02.png" alt="artist-shape-02">
       <img class="artist" src="/public/images/artist-hero-image-03.png" alt="artist-hero-image-03">
       <img class="background-spheres" src="/public/images/artist-shape-03-201x300.png" alt="artist-shape-03">
       <img class="paint-art" src="/public/images/artist-hero-image-02.jpg" alt="artist-hero-image-02">
-      <img src="/public/images/artist-hero-image-01.jpg" alt="artist-hero-image-01">
+      <img class="artist-hero" src="/public/images/artist-hero-image-01.jpg" alt="artist-hero-image-01">
     </div>
 
     <div class="artist-jumbo w-25 text-center">
@@ -37,21 +37,10 @@
     background-color:rgb(251, 249, 246);
     width: 100%;
     height: 740px;
-    .collage-right {
-      position: relative;
-      .background {
-        position: absolute;
-        top:0;
-        right: 100px;
-      }
-      .artist {
-        position: absolute;
-        bottom:0;
-        right: 0;
-      }
-    }
     .collage-left {
       position: relative;
+      width: 37%;
+      height: 100%;
       
       .background {
         position: absolute;
@@ -72,7 +61,32 @@
       .paint-art {
         position: absolute;
         top: 50px;
-        left: 300px;
+        left: 200px;
+      }
+      .artist-hero {
+        position: absolute;
+        bottom: 50px;
+        left: 210px;
+      }
+    }
+
+    .artist-jumbo {
+      z-index: 998;
+    }
+
+    .collage-right {
+      position: relative;
+      width: 37%;
+      height: 100%;
+      .background {
+        position: absolute;
+        top:0;
+        right: 100px;
+      }
+      .artist {
+        position: absolute;
+        bottom:0;
+        right: 0;
       }
     }
   }
