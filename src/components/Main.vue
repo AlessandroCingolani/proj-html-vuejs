@@ -112,12 +112,17 @@ import Jumbotron from './partials/Jumbotron.vue';
             <div class="card" style="width: 18rem;">
               <img src="/public/images/artist-course-08-480x480.jpg" class="card-img-top" alt="">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <span>Price</span>
+                <h6>Name course</h6>
+                <div class="info">
+                  <span>Number lesson</span>
+                  <span>NUmber students</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
+        <button class="ac_btn">View all courses  freccia</button>
       </div>
     </section>
 
