@@ -7,8 +7,10 @@
 
 <template>
   <header>
-    <div class="timing-ticket d-flex justify-content-center align-items-center">timing ticket
-      <button class="ac_btn">Get ticket</button>
+    <div class="timing-ticket d-flex justify-content-center align-items-center">
+      <span>Starts TOMORROW! Our biggest event of the year...</span>
+      <div class="timer"><i class="fa-regular fa-clock"></i>00 : 00 : 00 : 00</div>
+      <button class="ac_btn"><span>Get ticket</span></button>
     </div>
 
     <div class="container-fluid debug-box">
@@ -19,15 +21,15 @@
 
           <!-- Fixare inline block  -->
           <ul class="d-flex h-100 align-items-center ">
-            <li>Home</li>
-            <li>Pages</li>
-            <li>Courses</li>
-            <li>Features</li>
-            <li>Blog</li>
-            <li>Shop</li>
+            <li>Home<i class="fa-solid fa-chevron-down"></i></li>
+            <li>Pages<i class="fa-solid fa-chevron-down"></i></li>
+            <li>Courses<i class="fa-solid fa-chevron-down"></i></li>
+            <li>Features<i class="fa-solid fa-chevron-down"></i></li>
+            <li>Blog<i class="fa-solid fa-chevron-down"></i></li>
+            <li>Shop<i class="fa-solid fa-chevron-down"></i></li>
           </ul>
 
-          <div>
+          <div class="social">
             <i class="fa-brands fa-twitter"></i>
             <i class="fa-brands fa-facebook-f"></i>
             <i class="fa-brands fa-instagram"></i>
@@ -46,9 +48,34 @@
 <style lang="scss" scoped>
 @use '../../scss/partials/general'as *;
 @use '../../scss/partials/vars' as * ;
+
+nav {
+  img {
+    width: 160px;
+  }
+  li {
+    margin-right: 40px;
+      i {
+      margin-left: 5px;
+      font-size: .5rem;
+    }
+  }
+  .social {
+    color: $social-gray;
+    i {
+      padding-right:25px ;
+    }
+  }
+}
   .timing-ticket {
     height: 50px;
     background-color: $background-white-palette;
+    .timer {
+      margin: 0 20px;
+      i {
+        margin-right: 10px;
+      }
+    }
   }
 
   .ac_md-container {
