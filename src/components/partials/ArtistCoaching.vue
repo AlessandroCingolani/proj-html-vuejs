@@ -47,7 +47,7 @@
  @use '../../../scss/partials/vars' as *;
 
   #artist-coaching {
-    background-image: url('/public/images/maxcoach-shape-03.png');
+    background-image: url('/public/images/maxcoach-shape-14-1536x343.png');
     background-position: center;
     background-size: cover;
   }
