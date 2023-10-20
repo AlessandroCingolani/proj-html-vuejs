@@ -12,12 +12,12 @@ import { store } from '../../data/store';
 </script>
 
 <template>
-      <!-- slider -->
-        <div v-for="(card,index) in store.testimonials" 
+    <!-- slider -->
+      <div v-for="(card,index) in store.testimonials" 
         :key="card.name + index" 
         :class="{'active': index === this.carouselIndex,'inactive':index != this.carouselIndex}"
         @click="carouselIndex = index"
-        class="col-4">
+        class="carousel">
         
           <div
            :class="index < 3 ? '' : 'hidden'"
@@ -34,35 +34,51 @@ import { store } from '../../data/store';
               </div>
             </div>
           </div>
-        </div>
+      </div>
+      <div class="box-circle text-center p-3">
+       <i 
+       v-for="(circle,index) in store.testimonials.length" 
+       :key="circle+index"
+       :class="{'active': index === this.carouselIndex,'inactive':index != this.carouselIndex}"
+       @click="carouselIndex = index"
+       class="fa-solid fa-circle pe-2"></i>
+      </div>
 </template>
 
 
 <style lang="scss" scoped>
-  #testimonials {
-    background-color: rgb(250, 248, 246);
-    .hidden {
-      display: none;
+.carousel {
+  width: calc(100% / 3);
+}
+.hidden {
+  display: none;
+}
+.inactive {
+  opacity: 0.4;
+}
+.active {
+  .card{
+    opacity: 1;
+  }
+}
+  .card {
+    &:hover {
+      cursor: pointer;
     }
-    .inactive {
-      opacity: 0.4;
-    }
-    .active {
-      .card{
-        opacity: 1;
+    padding: 30px;
+    .profile {
+      img {
+        width: 50px;
+        border-radius: 50%;
       }
     }
-      .card {
-        &:hover {
-          cursor: pointer;
-        }
-        padding: 30px;
-        .profile {
-          img {
-            width: 50px;
-            border-radius: 50%;
-          }
-        }
+  }
+  .box-circle {
+    i {
+      font-size: .6rem;
+      &:hover{
+        cursor: pointer;
       }
     }
+  }
 </style>
