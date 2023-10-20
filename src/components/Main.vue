@@ -4,6 +4,7 @@ import ArtistCoaching from './partials/ArtistCoaching.vue';
 import Jumbotron from './partials/Jumbotron.vue';
 import Testimonial from './partials/Testimonial.vue';
 import LatesCourses from './partials/LatesCourses.vue';
+import LatestBlog from './partials/LatestBlog.vue';
  export default {
   name:'Main',
   components:{
@@ -11,7 +12,8 @@ import LatesCourses from './partials/LatesCourses.vue';
     ArtistCoaching,
     VideoSection,
     Testimonial,
-    LatesCourses
+    LatesCourses,
+    LatestBlog
   }
 }
 </script>
@@ -23,70 +25,19 @@ import LatesCourses from './partials/LatesCourses.vue';
     <VideoSection/>
     <Testimonial/>
     <LatesCourses title="Artist coaching" type="courses"/>
+    <LatestBlog title="Articles and Tips" type="latestBlog"/>
 
-    <!-- ultime dal blog  -->
-    <section>
-      <div class="ac_sm-container">
-        <div class="title text-center">
-          <i>Articles and Tips</i>
-          <h6>Latest From The Blog</h6>
-        </div>
-        <div class="row">
-          <div class="col-4">
-            <div class="card" style="width: 18rem;">
-              <img src="/public/images/artist-course-08-480x480.jpg" class="card-img-top" alt="">
-              <div class="card-body">
-                <span>Title</span>
-                <h6>Name</h6>
-                <div class="info">
-                  <span>Data</span>
-                  <span>views</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="card" style="width: 18rem;">
-              <img src="/public/images/artist-course-08-480x480.jpg" class="card-img-top" alt="">
-              <div class="card-body">
-                <span>Title</span>
-                <h6>Name</h6>
-                <div class="info">
-                  <span>Data</span>
-                  <span>views</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="card" style="width: 18rem;">
-              <img src="/public/images/artist-course-08-480x480.jpg" class="card-img-top" alt="">
-              <div class="card-body">
-                <span>Title</span>
-                <h6>Name</h6>
-                <div class="info">
-                  <span>Data</span>
-                  <span>views</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="post-link text-center ">
-          <span>Get into details now? <a href="#">View all posts <i class="fa-solid fa-arrow-right-long"></i></a></span>
-        </div>
-      </div>
-    </section>
+    
 
     <!-- lavoriamo insieme -->
     <section id="work-together">
       <div class="rotate-text">
-        <h1>Events</h1>
+        <h1 class="rotate">Events</h1>
       </div>
       <div class="ac_sm-container">
-        <div class="title text-center">
-          <i>Upcoming Events</i>
-          <h6>Let's Work Together</h6>
+        <div class="title-section text-center">
+          <em>Upcoming Events</em>
+          <h4>Let's Work Together</h4>
         </div>
         <div class="row">
           <div class="col">
@@ -164,7 +115,8 @@ import LatesCourses from './partials/LatesCourses.vue';
       position: relative;
       .rotate-text {
         position: absolute;
-        bottom: 40px;
+        bottom: 100px;
+        left: 0;
         transform: rotate(90deg);
       }
     }

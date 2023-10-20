@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/bonheur-royale": "^5.0.16",
+    "@fontsource/londrina-sketch": "^5.0.16",
     "@fontsource/roboto": "^5.0.8",
     "bootstrap": "^5.3.2",
     "vue": "^3.3.4"

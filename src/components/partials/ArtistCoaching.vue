@@ -10,7 +10,7 @@
       <div class="container-fluid">
         <div class="ac_sm-container text-center ">
           <div class="title-section">
-            <i>Artist coaching</i>
+            <em>Artist coaching</em>
             <h4>I understand what it takes to create.I can help you with</h4>
           </div>
           <div class="row">

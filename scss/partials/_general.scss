@@ -21,7 +21,7 @@
   padding: 15px;
 }
 
-
+// ul reset
 ul {
   padding: 0;
   margin: 0;
@@ -30,10 +30,21 @@ ul {
   }
 }
 
+// Blue signature
+em {
+  color: $sky-blue-palette;
+  font-size: 2.3rem;
+  font-family: 'Bonheur Royale', sans-serif;
+}
 
+// Rotate text
+.rotate {
+  font-size: 150px;
+  color:$background-pink ;
+  font-family: 'Londrina Sketch', sans-serif;
+} 
 
-// btn 
-
+// my btn 
 .ac_btn {
   color: white;
   background-color: $orange-palette;
@@ -49,5 +60,14 @@ ul {
     background-color: $sky-blue-palette;
     transition: .2s all;
     scale: 1;
+  }
+}
+
+.title-section {
+  width: 50%;
+  padding-bottom: 30px;
+  margin: 0 auto;
+  h4 {
+    font-weight:600 ;
   }
 }

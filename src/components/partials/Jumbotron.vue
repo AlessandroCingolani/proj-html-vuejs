@@ -15,7 +15,7 @@
     </div>
 
     <div class="artist-jumbo text-center">
-      <i>Hello,Im martin</i>
+      <em>Hello, Im martin</em>
       <h4>Artist Coaching And Mentoring Might Be for You.</h4>
       <button class="ac_btn"><span>Get started today</span></button>
     </div>
@@ -35,17 +35,21 @@
   @use '../../../scss/partials/vars' as *;
 
   #Jumbo {
+    position: relative;
     background-color:rgb(251, 249, 246);
     width: 100%;
     height: 740px;
     .collage-left {
-      position: relative;
-      width: 40%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;
       height: 100%;
       
       .background {
         position: absolute;
-        width:100%;
+        width: 100%;
+        height: 70%;
         top: 0;
         left: 0;
       }
@@ -75,16 +79,20 @@
     }
 
     .artist-jumbo {
+      width: 30%;
       z-index: 998;
     }
 
     .collage-right {
-      position: relative;
-      width: 40%;
+      position: absolute;
+      width: 50%;
       height: 100%;
+      top: 0;
+      right: 0;
       .background {
         position: absolute;
-        width: 100%;
+        width: 70%;
+        height: 70%;
         top:0;
         right: 100px;
       }

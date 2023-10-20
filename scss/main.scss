@@ -3,7 +3,14 @@
 
 @import 'bootstrap/scss/bootstrap';
 @import '@fontsource/roboto';
+@import '@fontsource/bonheur-royale';
+@import '@fontsource/londrina-sketch';
 
 body {
   font-family: $main-font;
 }
+
+section {
+  margin-bottom: 30px;
+}
+

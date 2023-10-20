@@ -15,7 +15,7 @@
             <div class="col">
               <img src="/public/images/artist-quote-icon.png" alt="">
               <h4>I coach and mentor visual artists, like you, to Create Like You Mean lt</h4>
-              <i>Martin Garrix</i>
+              <em>Martin Garrix</em>
             </div>
 
             <div class="col">

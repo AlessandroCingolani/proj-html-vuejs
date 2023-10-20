@@ -18,11 +18,11 @@ import { store } from '../../data/store';
     <div class="card h-100">
       <img :src="`/images/${cardObj.imgCourse}`" class="card-img-top" alt="">
       <div class="card-body">
-        <span class="price">{{ cardObj.price }}</span>
+        <span class="price">{{ cardObj.price || cardObj.title }}</span>
         <h6>{{ cardObj.name }}</h6>
         <div class="info">
-            <span><i class="fa-solid fa-file-lines"></i>{{ cardObj.numberLessons }}</span>
-            <span><i class="fa-solid fa-user-large"></i>{{ cardObj.students }}</span>
+            <span><i :class="{'fa-solid fa-file-lines':cardObj.numberLessons, 'fa-regular fa-calendar': cardObj.date}"></i>{{ cardObj.numberLessons || cardObj.date}}</span>
+            <span><i :class="{'fa-solid fa-user-large':cardObj.students, 'fa-regular fa-eye': cardObj.views}"></i>{{ cardObj.students || cardObj.views}}</span>
         </div>
       </div>
     </div>

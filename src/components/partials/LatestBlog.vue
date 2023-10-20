@@ -2,7 +2,7 @@
 import Card from './Card.vue';
 import { store } from '../../data/store'
  export default {
-  name:'LatesCourses',
+  name:'LatesBlog',
   components:{
     Card
   },
@@ -19,21 +19,22 @@ import { store } from '../../data/store'
 </script>
 
 <template>
-  <!-- corsi da fare card da buttare dentro -->
-  <section id="artist-coaching">
-      <div class="ac_md-container">
-        <div class="title-section text-center ">
+  <!-- ultime dal blog  -->
+  <section>
+      <div class="ac_sm-container">
+        <div class="title-section text-center">
           <em>{{ title }}</em>
-          <h4>Latest online courses</h4>
+          <h4>Latest From The Blog</h4>
         </div>
-        <div class="row h-100">
+        <div class="row">
           <Card v-for="(card,index) in store[type]" :key="card.name + index" :cardObj="card"/>
-        </div> 
-        <div class="text-center"> 
-          <button class="ac_btn"><span>View all courses  <i class="fa-solid fa-arrow-right-long"></i></span></button>
+          <div class="post-link text-center ">
+            <span>Get into details now? <a href="#">View all posts <i class="fa-solid fa-arrow-right-long"></i></a></span>
+          </div>
         </div>
       </div>
     </section>
+  
 </template>
 
 

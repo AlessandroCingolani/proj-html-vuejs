@@ -11,8 +11,8 @@ import TestimonialCard from './TestimonialCard.vue';
 <template>
       <!-- slider da fare componente -->
       <section id="testimonials">
-        <div class="title text-center ">
-          <i>Testimonials</i>
+        <div class="title-section text-center ">
+          <em>Testimonials</em>
           <h4>Why do people love me?</h4>
         </div>
       <!-- slider -->
