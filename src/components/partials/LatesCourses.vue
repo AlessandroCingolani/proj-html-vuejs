@@ -1,6 +1,20 @@
 <script>
+import Card from './Card.vue';
+import { store } from '../../data/store'
  export default {
-  name:'LatesCourses'
+  name:'LatesCourses',
+  components:{
+    Card
+  },
+  props:{
+    title:String,
+    type:String
+  },
+  data(){
+    return{
+      store
+    }
+  }
 }
 </script>
 
@@ -9,116 +23,15 @@
   <section id="artist-coaching">
       <div class="ac_md-container">
         <div class="title text-center ">
-          <i>Artist coaching</i>
+          <i>{{ title }}</i>
           <h5>Latest online courses</h5>
         </div>
-        <div class="row">
-          <div class="ac_col">
-            <div class="card" style="width: 18rem;">
-              <img src="/public/images/artist-course-08-480x480.jpg" class="card-img-top" alt="">
-              <div class="card-body">
-                <span>Price</span>
-                <h6>Name course</h6>
-                <div class="info">
-                  <span>Number lesson</span>
-                  <span>NUmber students</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="ac_col">
-            <div class="card" style="width: 18rem;">
-              <img src="/public/images/artist-course-08-480x480.jpg" class="card-img-top" alt="">
-              <div class="card-body">
-                <span>Price</span>
-                <h6>Name course</h6>
-                <div class="info">
-                  <span>Number lesson</span>
-                  <span>NUmber students</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="ac_col">
-            <div class="card" style="width: 18rem;">
-              <img src="/public/images/artist-course-08-480x480.jpg" class="card-img-top" alt="">
-              <div class="card-body">
-                <span>Price</span>
-                <h6>Name course</h6>
-                <div class="info">
-                  <span>Number lesson</span>
-                  <span>NUmber students</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="ac_col">
-            <div class="card" style="width: 18rem;">
-              <img src="/public/images/artist-course-08-480x480.jpg" class="card-img-top" alt="">
-              <div class="card-body">
-                <span>Price</span>
-                <h6>Name course</h6>
-                <div class="info">
-                  <span>Number lesson</span>
-                  <span>NUmber students</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="ac_col">
-            <div class="card" style="width: 18rem;">
-              <img src="/public/images/artist-course-08-480x480.jpg" class="card-img-top" alt="">
-              <div class="card-body">
-                <span>Price</span>
-                <h6>Name course</h6>
-                <div class="info">
-                  <span>Number lesson</span>
-                  <span>NUmber students</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="ac_col">
-            <div class="card" style="width: 18rem;">
-              <img src="/public/images/artist-course-08-480x480.jpg" class="card-img-top" alt="">
-              <div class="card-body">
-                <span>Price</span>
-                <h6>Name course</h6>
-                <div class="info">
-                  <span>Number lesson</span>
-                  <span>NUmber students</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="ac_col">
-            <div class="card" style="width: 18rem;">
-              <img src="/public/images/artist-course-08-480x480.jpg" class="card-img-top" alt="">
-              <div class="card-body">
-                <span>Price</span>
-                <h6>Name course</h6>
-                <div class="info">
-                  <span>Number lesson</span>
-                  <span>NUmber students</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="ac_col">
-            <div class="card" style="width: 18rem;">
-              <img src="/public/images/artist-course-08-480x480.jpg" class="card-img-top" alt="">
-              <div class="card-body">
-                <span>Price</span>
-                <h6>Name course</h6>
-                <div class="info">
-                  <span>Number lesson</span>
-                  <span>NUmber students</span>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="row h-100">
+          <Card v-for="(card,index) in store[type]" :key="card.name + index" :cardObj="card"/>
+        </div> 
+        <div class="text-center"> 
+          <button class="ac_btn"><span>View all courses  <i class="fa-solid fa-arrow-right-long"></i></span></button>
         </div>
-        <button class="ac_btn">View all courses  freccia</button>
       </div>
     </section>
 </template>
