@@ -15,10 +15,13 @@ import { store } from '../../data/store';
       <!-- slider -->
         <div v-for="(card,index) in store.testimonials" 
         :key="card.name + index" 
-        :class="{'active': index === this.carouselIndex}"
+        :class="{'active': index === this.carouselIndex,'inactive':index != this.carouselIndex}"
         @click="carouselIndex = index"
-        class="col-4 h-100">
-          <div class="card h-100">
+        class="col-4">
+        
+          <div
+           :class="index < 3 ? '' : 'hidden'"
+           class="card h-100">
             <h5>{{ card.title }}</h5>
             <p>{{ card.description }}</p>
             <div class="profile d-flex">
@@ -38,9 +41,15 @@ import { store } from '../../data/store';
 <style lang="scss" scoped>
   #testimonials {
     background-color: rgb(250, 248, 246);
+    .hidden {
+      display: none;
+    }
+    .inactive {
+      opacity: 0.4;
+    }
     .active {
       .card{
-        background-color: red;
+        opacity: 1;
       }
     }
       .card {
