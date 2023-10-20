@@ -3,6 +3,7 @@ import { reactive } from 'vue';
 export const store = reactive({
   courses: [
     {
+      imgCourse:'artist-course-08-480x480.jpg',
       name:'The Acrylic Painting Academy',
       price:'$18.00',
       numberLessons: 4,
@@ -12,6 +13,7 @@ export const store = reactive({
       location:null
     },
     {
+      imgCourse:'artist-course-07-480x480.jpg',
       name:'Drawing and Shading: Complete Course',
       price:'$21.00',
       numberLessons: 14,
@@ -21,6 +23,7 @@ export const store = reactive({
       location:null
     },
     {
+      imgCourse:'artist-course-06-480x480.jpg',
       name:'The Color Theory for Digital Artist',
       price:'$19.00',
       numberLessons: 7,
@@ -30,6 +33,7 @@ export const store = reactive({
       location:null
     },
     {
+      imgCourse:'artist-course-05-480x480.jpg',
       name:'Ultimate Guide to Digital Sketching fo Beginner',
       price:'$35.00',
       numberLessons: 14,
@@ -39,6 +43,7 @@ export const store = reactive({
       location:null
     },
     {
+      imgCourse:'artist-course-04-480x480.jpg',
       name:'Portrait Drawing The Smart Way',
       price:'$19.00',
       numberLessons: 2,
@@ -48,6 +53,7 @@ export const store = reactive({
       location:null
     },
     {
+      imgCourse:'artist-course-03-480x480.jpg',
       name:'Mastering Watercolor Painting from Beginner',
       price:'$19.00',
       numberLessons: 9,
@@ -57,6 +63,7 @@ export const store = reactive({
       location:null
     },
     {
+      imgCourse:'artist-course-02-480x480.jpg',
       name:'The Art & Science of Drawing',
       price:'$25.00',
       numberLessons: 4,
@@ -66,6 +73,7 @@ export const store = reactive({
       location:null
     },
     {
+      imgCourse:'artist-course-01-480x480.jpg',
       name:'The Colored Pencil Drawing Course',
       price:'$22.00',
       numberLessons: 6,
@@ -77,18 +85,21 @@ export const store = reactive({
   ],
   latestBlog:[
     {
+      imgCourse:'120012142_177596140500760_8623485824101406058_n.jpg',
       title:'Artist',
       name:'Brush Strokes Energize Trees in Paintings',
       views:688,
       date:'May 15,2020'
     },
     {
+      imgCourse:'artist-blog-02-500x680.jpg',
       title:'Artist',
       name:'Connection Between Self-Portraits Identity',
       views:397,
       date:'May 15,2020'
     },
     {
+      imgCourse:'artist-blog-01-480x356.jpg',
       title:'Artist',
       name:'Pocket-Sized Notebooks Hold Miniature Paintings',
       views:603,
