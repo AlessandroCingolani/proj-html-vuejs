@@ -149,6 +149,13 @@ export const store = reactive({
       imgProfile:'artist-testimonial-avatar-02.jpg',
       title:'lt s a choice of quality for people with special needs',
       description:'l m a very strict person so I require everything to be organized and neat. Then, l Il be able to make things right and shina MaxCoach guys just got me.',
+    },
+    {
+      name:'Pinco Jenner',
+      role:'/Ipsum Admin',
+      imgProfile:'artist-testimonial-avatar-03.jpg',
+      title:'Lorem Ipsum',
+      description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum',
     }
   ]
 })
