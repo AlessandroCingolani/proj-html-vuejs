@@ -2,8 +2,8 @@
 import TestimonialCard from './TestimonialCard.vue';
  export default {
   name:'Testimonial',
-  components:{
-    TestimonialCard
+ components:{
+    TestimonialCard,
   }
 }
 </script>
@@ -16,9 +16,8 @@ import TestimonialCard from './TestimonialCard.vue';
           <h4>Why do people love me?</h4>
         </div>
       <!-- slider -->
-      <div class="row w-100 h-100 justify-content-center ">
+      <div class="row w-100">
         <TestimonialCard/>
-        <span>pallino</span>
       </div>
     </section>
 </template>
