@@ -18,6 +18,7 @@ import TestimonialCard from './TestimonialCard.vue';
       <!-- slider -->
       <div class="row w-100 h-100 justify-content-center ">
         <TestimonialCard/>
+        <span>pallino</span>
       </div>
     </section>
 </template>
