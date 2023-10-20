@@ -20,7 +20,7 @@ import { store } from '../../data/store';
             <p>{{ card.description }}</p>
             <div class="profile d-flex">
               <div class="avatar">
-                <img :src="`/public/images/${card.imgProfile}`" alt="">
+                <img :src="`/images/${card.imgProfile}`" alt="">
               </div>
               <div class="profile-data">
                 <h6>{{ card.name }}</h6>
