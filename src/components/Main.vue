@@ -22,7 +22,7 @@ import LatesCourses from './partials/LatesCourses.vue';
     <ArtistCoaching/>
     <VideoSection/>
     <Testimonial/>
-    <LatesCourses/>
+    <LatesCourses title="Artist coaching" type="courses"/>
 
     <!-- ultime dal blog  -->
     <section>
@@ -73,7 +73,7 @@ import LatesCourses from './partials/LatesCourses.vue';
           </div>
         </div>
         <div class="post-link text-center ">
-          <span>Get into details now? <a href="#">View all posts  freccia</a></span>
+          <span>Get into details now? <a href="#">View all posts <i class="fa-solid fa-arrow-right-long"></i></a></span>
         </div>
       </div>
     </section>
