@@ -1,26 +1,50 @@
 <script>
 import { store } from '../../data/store';
  export default {
-  name:'TestimonialCard',
+  name:'Carousel',
   data(){
     return{
       store,
       carouselIndex:0
     }
   },
+  methods: {
+    clickCarousel(index){
+      this.carouselIndex = index
+      store.testimonials.forEach((vis,index)=> {
+       store.testimonials[index].visible = false
+      })
+      if (this.carouselIndex === 0) {
+        store.testimonials[this.carouselIndex].visible = true
+        store.testimonials[this.carouselIndex +1].visible = true
+        store.testimonials[this.carouselIndex +2].visible = true
+
+      }else if (this.carouselIndex === store.testimonials.length -1){
+        store.testimonials[this.carouselIndex -1].visible = true
+        store.testimonials[this.carouselIndex].visible = true
+        store.testimonials[this.carouselIndex -2].visible = true
+      }else{
+        store.testimonials[this.carouselIndex +1].visible = true
+        store.testimonials[this.carouselIndex].visible = true
+        store.testimonials[this.carouselIndex -1].visible = true
+      }
+       
+    }
+  }
 }
 </script>
 
 <template>
     <!-- slider -->
       <div v-for="(card,index) in store.testimonials" 
+        :position="index"
         :key="card.name + index" 
-        :class="{'active': index === this.carouselIndex,'inactive':index != this.carouselIndex}"
         @click="carouselIndex = index"
+        :class="card.visible  ? '' : 'hidden'"
         class="carousel">
         
           <div
-           :class="index < 3 ? '' : 'hidden'"
+           :class="index === this.carouselIndex  ? 'active' : 'inactive'"
            class="card h-100">
             <h5>{{ card.title }}</h5>
             <p>{{ card.description }}</p>
@@ -40,7 +64,7 @@ import { store } from '../../data/store';
        v-for="(circle,index) in store.testimonials.length" 
        :key="circle+index"
        :class="{'active': index === this.carouselIndex,'inactive':index != this.carouselIndex}"
-       @click="carouselIndex = index"
+       @click="clickCarousel(index)"
        class="fa-solid fa-circle pe-2"></i>
       </div>
 </template>
@@ -49,7 +73,8 @@ import { store } from '../../data/store';
 <style lang="scss" scoped>
 .carousel {
   width: calc(100% / 3);
-}
+  }
+
 .hidden {
   display: none;
 }

@@ -1,9 +1,9 @@
 <script>
-import TestimonialCard from './TestimonialCard.vue';
+import Carousel from './Carousel.vue';
  export default {
   name:'Testimonial',
  components:{
-    TestimonialCard,
+    Carousel,
   }
 }
 </script>
@@ -17,7 +17,7 @@ import TestimonialCard from './TestimonialCard.vue';
         </div>
       <!-- slider -->
       <div class="row w-100">
-        <TestimonialCard/>
+        <Carousel/>
       </div>
     </section>
 </template>
