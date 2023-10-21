@@ -21,17 +21,20 @@ import { store } from '../../data/store';
   <div class="ac_col">
     
     <div 
-      :class="{'card-prova': !cardProp, 'card': cardProp }"
+      :class="{'card-blog': !cardProp, 'card': cardProp }"
       class="h-100"
       >
       <img :src="`/images/${cardObj.imgCourse}`" class="card-img-top" alt="">
       <div class="card-body">
-        <span class="title-card">{{ cardObj.price || cardObj.title }}</span>
-        <h6>{{ cardObj.name }}</h6>
-        <div class="info">
-            <span><i :class="{'fa-solid fa-file-lines':cardObj.numberLessons, 'fa-regular fa-calendar': cardObj.date}"></i>{{ cardObj.numberLessons || cardObj.date}}</span>
-            
-            <span><i :class="{'fa-solid fa-user-large':cardObj.students, 'fa-regular fa-eye': cardObj.views}"></i>{{ cardObj.students  || cardObj.views}}</span>
+        <div class="hover-box">
+
+          <span class="title-card">{{ cardObj.price || cardObj.title }}</span>
+          <h6>{{ cardObj.name }}</h6>
+          <div class="info">
+              <span><i :class="{'fa-solid fa-file-lines':cardObj.numberLessons, 'fa-regular fa-calendar': cardObj.date}"></i>{{ cardObj.numberLessons || cardObj.date}}</span>
+  
+              <span><i :class="{'fa-solid fa-user-large':cardObj.students, 'fa-regular fa-eye': cardObj.views}"></i>{{ cardObj.students  || cardObj.views}}</span>
+          </div>
         </div>
       </div>
     </div>
@@ -56,9 +59,32 @@ import { store } from '../../data/store';
     
   }
 // card for courses
-  .card-prova {
+@keyframes cardanimation{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-40px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+  
+.card-blog {
     .card-body{
-      padding: 20px;
+      cursor: pointer;
+      .hover-box {
+        width: 90%;
+        padding: 20px;
+        &:hover {
+          animation: cardanimation 1s linear ;
+          animation-timing-function: ease-in;
+          background-color: white;
+          border: 1px solid $orange-palette;
+        }
+      }
       .title-card {
           font-weight: 600;
           color: $orange-palette;
@@ -73,7 +99,7 @@ import { store } from '../../data/store';
         color: gray;
       }
       
-      width: 90%;
+      width: 100%;
       background-color: white;
       &:hover {
         cursor: pointer;
