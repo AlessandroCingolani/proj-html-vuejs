@@ -39,13 +39,27 @@ import { store } from '../../data/store';
   .info {
     color: $social-gray;
   }
+  @keyframes animatename{
+  0%{
+    transform:translateY(0,0);
+  }
+  100%{
+    transform: translateY(-30px);
+  }
+}
   .card{
     position: relative;
+    border: none;
     .card-body {
+      width: 90%;
+      background-color: white;
       &:hover {
         cursor: pointer;
-        transition: 1s all;
+        animation: animatename 1s linear ;
+        /* animation shorthand */
+        // animation: animation-name animation-duration animation-direction animation-iteration-count;
         border: 1px solid $orange-palette;
+     
       }
   }
   }
