@@ -27,7 +27,7 @@ import { store } from '../../data/store'
           <h4>Latest From The Blog</h4>
         </div>
         <div class="row">
-          <Card v-for="(card,index) in store[type]" :key="card.name + index" :cardObj="card"/>
+          <Card v-for="(card,index) in store[type]" :key="card.name + index" :cardObj="card" :cardProp="true"/>
           <div class="post-link text-center ">
             <span>Get into details now? <a href="#">View all posts <i class="fa-solid fa-arrow-right-long"></i></a></span>
           </div>
@@ -40,4 +40,13 @@ import { store } from '../../data/store'
 
 <style lang="scss" scoped>
   @use '../../../scss/partials/general'as *;
+  section {
+    background-color: rgb(245, 247, 250);
+    background-image: url('/public/images/maxcoach-shape-03.png');
+    background-position: center;
+    background-size: cover;
+    .ac_col {
+      width: calc(100% / 3);    
+    }
+  }
 </style>
