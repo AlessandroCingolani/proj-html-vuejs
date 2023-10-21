@@ -12,7 +12,7 @@ import Countdown from './partials/Countdown.vue'
 <template>
   <header>
     <div class="timing-ticket d-flex justify-content-center align-items-center">
-      <span>Starts TOMORROW! Our biggest event of the year...</span>
+      <span class="start-date-text">Starts TOMORROW! Our biggest event of the year...</span>
       <Countdown/>
       <button class="ac_btn"><span>Get ticket</span></button>
     </div>
@@ -74,6 +74,10 @@ nav {
   .timing-ticket {
     height: 50px;
     background-color: $background-white-palette;
+    .start-date-text {
+      font-size: .9rem;
+      color: rgba(128, 128, 128, 0.702);
+    }
     .timer {
       margin: 0 20px;
       i {
