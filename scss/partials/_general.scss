@@ -30,6 +30,11 @@ ul {
   }
 }
 
+// del text decoration a
+a {
+  text-decoration: none;
+}
+
 // Blue signature
 em {
   color: $sky-blue-palette;
