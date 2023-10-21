@@ -108,22 +108,26 @@ export const store = reactive({
   ],
   workTogheter:[
     {
-      date:'NOV 22,2020',
+      imgCourse:'artist-event-04-250x300.jpg',
+      date:'NOV 22, 2020',
       name:'Storytelling Workshop',
       location:'Texas,US'
     },
     {
-      date:'OCT 10,2020',
+      imgCourse:'artist-event-03-250x300.jpg',
+      date:'OCT 10, 2020',
       name:'Painting Art Contest 2020',
       location:'New York,US'
     },
     {
-      date:'NOV 23,2020',
+      imgCourse:'artist-event-02-250x300.jpg',
+      date:'NOV 23, 2020',
       name:'International Art Fair 2020',
       location:'Hamburg,Germany'
     },
     {
-      date:'DEC 15,2020',
+      imgCourse:'artist-event-01-250x300.jpg',
+      date:'DEC 15, 2020',
       name:'Street Performance: Call for Artist',
       location:'illinois,US'
     },
