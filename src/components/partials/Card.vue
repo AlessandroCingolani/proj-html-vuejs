@@ -3,7 +3,11 @@ import { store } from '../../data/store';
  export default {
   name:'Card',
   props:{
-    cardObj:Object
+    cardObj:Object,
+    cardProp: {
+      type: Boolean,
+      default: false,
+    },
   },
   data(){
     return{
@@ -15,14 +19,19 @@ import { store } from '../../data/store';
 
 <template>
   <div class="ac_col">
-    <div class="card h-100">
+    
+    <div 
+      :class="{'card-prova': !cardProp, 'card': cardProp }"
+      class="h-100"
+      >
       <img :src="`/images/${cardObj.imgCourse}`" class="card-img-top" alt="">
       <div class="card-body">
-        <span class="price">{{ cardObj.price || cardObj.title }}</span>
+        <span class="title-card">{{ cardObj.price || cardObj.title }}</span>
         <h6>{{ cardObj.name }}</h6>
         <div class="info">
             <span><i :class="{'fa-solid fa-file-lines':cardObj.numberLessons, 'fa-regular fa-calendar': cardObj.date}"></i>{{ cardObj.numberLessons || cardObj.date}}</span>
-            <span><i :class="{'fa-solid fa-user-large':cardObj.students, 'fa-regular fa-eye': cardObj.views}"></i>{{ cardObj.students || cardObj.views}}</span>
+            
+            <span><i :class="{'fa-solid fa-user-large':cardObj.students, 'fa-regular fa-eye': cardObj.views}"></i>{{ cardObj.students  || cardObj.views}}</span>
         </div>
       </div>
     </div>
@@ -33,33 +42,41 @@ import { store } from '../../data/store';
 <style lang="scss" scoped>
   @use '../../../scss/partials/general'as *;
   @use '../../../scss/partials/vars'as *;
-  .price {
-    color: $orange-palette;
+  
+  h6 {
+    margin: 8px 0;
   }
   .info {
     color: $social-gray;
+    font-size: .8rem;
+    i {
+      margin: 0 5px;
+      
+    }
+    
   }
-  @keyframes animatename{
-  0%{
-    transform:translateY(0,0);
+// card for courses
+  .card-prova {
+    .card-body{
+      padding: 20px;
+      .title-card {
+          font-weight: 600;
+          color: $orange-palette;
+        }
+    }
   }
-  100%{
-    transform: translateY(-30px);
-  }
-}
+
+  // card for latest blog
   .card{
-    position: relative;
-    border: none;
     .card-body {
+      .title-card {
+        color: gray;
+      }
+      
       width: 90%;
       background-color: white;
       &:hover {
         cursor: pointer;
-        animation: animatename 1s linear ;
-        /* animation shorthand */
-        // animation: animation-name animation-duration animation-direction animation-iteration-count;
-        border: 1px solid $orange-palette;
-     
       }
   }
   }
