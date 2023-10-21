@@ -40,6 +40,7 @@ import { store } from '../../data/store'
 
 <style lang="scss" scoped>
   @use '../../../scss/partials/general'as *;
+  @use '../../../scss/partials/vars'as *;
   section {
     background-color: rgb(245, 247, 250);
     background-image: url('/public/images/maxcoach-shape-03.png');
@@ -47,6 +48,14 @@ import { store } from '../../data/store'
     background-size: cover;
     .ac_col {
       width: calc(100% / 3);    
+    }
+    .post-link {
+      padding: 40px 0;
+      span {
+        a {
+          color: $orange-palette;
+        }
+      }
     }
   }
 </style>
