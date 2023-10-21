@@ -85,7 +85,7 @@ export const store = reactive({
   ],
   latestBlog:[
     {
-      imgCourse:'120012142_177596140500760_8623485824101406058_n.jpg',
+      imgCourse:'artist-blog-03-480x356.jpeg',
       title:'Artist',
       name:'Brush Strokes Energize Trees in Paintings',
       views:688,
@@ -130,7 +130,7 @@ export const store = reactive({
   ],
   testimonials: [
     {
-      id:0,
+      visible:true,
       name:'Mina Hollace',
       role:'/Freelancer',
       imgProfile:'artist-testimonial-avatar-04.jpg',
@@ -138,7 +138,7 @@ export const store = reactive({
       description:'I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.',
     },
     {
-      id:1,
+      visible:true,
       name:'Madley Pondor',
       role:'/IT Specialist',
       imgProfile:'artist-testimonial-avatar-01.jpg',
@@ -146,7 +146,7 @@ export const store = reactive({
       description:'I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.',
     },
     {
-      id:2,
+      visible:true,
       name:'Florence Themes',
       role:'/Multimedia Admin',
       imgProfile:'artist-testimonial-avatar-02.jpg',
@@ -154,7 +154,7 @@ export const store = reactive({
       description:'l m a very strict person so I require everything to be organized and neat. Then, l Il be able to make things right and shina MaxCoach guys just got me.',
     },
     {
-      id:3,
+      visible:false,
       name:'Pinco Jenner',
       role:'/Ipsum Admin',
       imgProfile:'artist-testimonial-avatar-03.jpg',
