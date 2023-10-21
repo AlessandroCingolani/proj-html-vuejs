@@ -39,7 +39,7 @@ import { store } from '../../data/store';
       <div v-for="(card,index) in store.testimonials" 
         :position="index"
         :key="card.name + index" 
-        @click="carouselIndex = index"
+        @click="clickCarousel(index)"
         :class="card.visible  ? '' : 'hidden'"
         class="carousel">
         
