@@ -14,7 +14,6 @@ import Countdown from './partials/Countdown.vue'
     <div class="timing-ticket d-flex justify-content-center align-items-center">
       <span>Starts TOMORROW! Our biggest event of the year...</span>
       <Countdown/>
-      <div class="timer"><i class="fa-regular fa-clock"></i>00 : 00 : 00 : 00</div>
       <button class="ac_btn"><span>Get ticket</span></button>
     </div>
 
