@@ -50,7 +50,8 @@ import { store } from '../../data/store';
     margin: 8px 0;
   }
   .info {
-    color: $social-gray;
+    padding-top: 15px;
+    color: rgba(128, 128, 128, 0.626);
     font-size: .8rem;
     i {
       margin: 0 5px;
@@ -58,32 +59,30 @@ import { store } from '../../data/store';
     }
     
   }
-// card for courses
-@keyframes cardanimation{
-  0%{
-    transform: translateY(0);
-  }
-  50%{
-    transform: translateY(-40px);
-  }
-  100%{
-    transform: translateY(0);
-  }
-}
+
 
   
 .card-course {
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+  &:hover {
+    .hover-box {
+        position: relative;
+        bottom: 40px;
+        background-color: white;
+        border: 1px solid $orange-palette;
+      }
+  }
+  h6 {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
     .card-body{
-      cursor: pointer;
       .hover-box {
         width: 90%;
-        padding: 20px;
-        &:hover {
-          animation: cardanimation 1s linear ;
-          animation-timing-function: ease-in;
-          background-color: white;
-          border: 1px solid $orange-palette;
-        }
+        height: 100%;
+        padding: 30px;
       }
       .title-card {
           font-weight: 600;
