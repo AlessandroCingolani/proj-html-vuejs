@@ -31,9 +31,20 @@ import { store } from '../../data/store';
           <span class="title-card">{{ cardObj.price || cardObj.title }}</span>
           <h6>{{ cardObj.name }}</h6>
           <div class="info">
-              <span><i :class="{'fa-solid fa-file-lines':cardObj.numberLessons, 'fa-regular fa-calendar': cardObj.date}"></i>{{ cardObj.numberLessons || cardObj.date}}</span>
+
+            <span>
+              <i :class="{'fa-solid fa-file-lines':cardObj.numberLessons, 'fa-regular fa-calendar': cardObj.date}"></i>
+              {{ cardObj.numberLessons || cardObj.date}} 
+              <span v-if="cardObj.numberLessons">Lessons</span>
+            </span>
   
-              <span><i :class="{'fa-solid fa-user-large':cardObj.students, 'fa-regular fa-eye': cardObj.views}"></i>{{ cardObj.students  || cardObj.views}}</span>
+            <span>
+              <i :class="{'fa-solid fa-user-large':cardObj.students, 'fa-regular fa-eye': cardObj.views}"></i>
+              {{ cardObj.students || cardObj.views}} 
+              <span v-if="cardObj.students">Students</span>
+              <span v-else>Views</span>
+            </span>
+              
           </div>
         </div>
       </div>
