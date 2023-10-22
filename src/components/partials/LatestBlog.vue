@@ -26,7 +26,7 @@ import { store } from '../../data/store'
           <em>{{ title }}</em>
           <h4>Latest From The Blog</h4>
         </div>
-        <div class="row">
+        <div class="row h-100 ">
           <Card v-for="(card,index) in store[type]" :key="card.name + index" :cardObj="card" :cardProp="true"/>
           <div class="post-link text-center ">
             <span>Get into details now? <a href="#">View all posts <i class="fa-solid fa-arrow-right-long"></i></a></span>
@@ -42,17 +42,17 @@ import { store } from '../../data/store'
   @use '../../../scss/partials/general'as *;
   @use '../../../scss/partials/vars'as *;
   section {
+    padding-top: 50px;
     background-color: rgb(245, 247, 250);
     background-image: url('/public/images/maxcoach-shape-03.png');
     background-position: center;
-    background-size: cover;
-    .ac_col {
-      width: calc(100% / 3);    
-    }
+    background-size:contain;
+   
     .post-link {
-      padding: 40px 0;
+      padding: 80px 0 40px 0;
       span {
         a {
+          font-weight: bold;
           color: $orange-palette;
         }
       }
