@@ -8,10 +8,10 @@
   <section id="Jumbo" class="d-flex justify-content-center align-items-center">
     <div class="toolbar">
       <ul>
-        <li></li>
+        <li><a href="#"><i class="fa-solid fa-ruler-combined"></i></a></li>
+        <li><a href="#"><i class="fa-solid fa-life-ring"></i></a></li>
         <li><a href="#"><i class="fa-solid fa-book"></i></a></li>
-        <li></li>
-        <li></li>
+        <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li> 
       </ul>
     </div>
     <div class="collage-left h-100">
@@ -49,6 +49,20 @@
     top: 200px;
     right: 0;
     z-index: 999;
+    box-shadow: 1px 4px 18px #888888a3;
+    ul {
+      width: 100%;
+      li {
+        padding: 10px;
+        width: 100%;
+        a {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          color:rgba(0, 0, 0, 0.691);
+        }
+      }
+    }
   }
 
   #Jumbo {
