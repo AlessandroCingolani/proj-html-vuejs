@@ -10,7 +10,7 @@ import Countdown from './partials/Countdown.vue'
 </script>
 
 <template>
-  <header>
+  <header id="Header">
     <div class="timing-ticket d-flex justify-content-center align-items-center">
       <span class="start-date-text">Starts TOMORROW! Our biggest event of the year...</span>
       <Countdown/>
