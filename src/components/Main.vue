@@ -80,7 +80,9 @@ import LatestBlog from './partials/LatestBlog.vue';
           </div>
           <div class="col-8 h-100 d-flex align-items-center">
             <div class="mail-box">
-              <span>Your email<input type="text" placeholder="Your e-mail"></span>
+              <span>Your e-mail</span>
+                <input type="text">
+                <i class="fa-solid fa-arrow-right-long"></i>
             </div>
           </div>
         </div>
@@ -156,6 +158,27 @@ import LatestBlog from './partials/LatestBlog.vue';
       }
       .mail-box {
         width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.387);
+        span {
+          width: 10%;
+        }
+        input {
+          width: 85%;
+          border:none;
+          background-color:  rgb(36, 65, 134);
+          padding: 5px;
+          border-radius: 0;
+          text-shadow: none;
+          box-shadow: none;
+          outline: none;
+          
+        }
+        i{
+          cursor: pointer;
+          width: 3%;
+          font-size: 1.3rem;
+        }
+        
       }
     }
 
