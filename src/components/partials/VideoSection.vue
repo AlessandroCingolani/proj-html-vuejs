@@ -13,14 +13,14 @@
           <div class="row">
 
             <div class="col-4 text-center">
-              <img src="/public/images/artist-quote-icon.png" alt="">
-              <h4>I coach and mentor visual artists, like you, to Create Like You Mean lt</h4>
+              <img class="pb-3" src="/public/images/artist-quote-icon.png" alt="">
+              <h4 class="title-artist">I coach and mentor visual artists, like you, to Create Like You Mean lt</h4>
               <em>Martin Garrix</em>
             </div>
 
-            <div class="col p-4">
+            <div class="col p-5 text-artist">
               <p>As a coach and mentor, my ultimate goal is to motivate visual artists toward inspired action. I help you get you back on track to being the productive, creative, meaningful and authentic artist you truly want to be.l support artists in crafting and living a creative life as well as feeling good about themselves and their art.</p>
-              <p>As an artist and an educator for nearly 30 years, I understand what it takes to create.</p>
+              <p class="pb-4">As an artist and an educator for nearly 30 years, I understand what it takes to create.</p>
               <button class="ac_btn transparent"><span>Get started today</span></button>
             </div>
 
@@ -40,6 +40,14 @@
  @use '../../../scss/partials/general' as *;
  @use '../../../scss/partials/vars' as *;
 
+  .title-artist {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+ .text-artist {
+  color: rgba(128, 128, 128, 0.799);
+
+ }
  .video-block {
   position: relative;
   margin: 0 auto;
