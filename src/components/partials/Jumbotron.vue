@@ -70,6 +70,11 @@
     background-color:rgb(251, 249, 246);
     width: 100%;
     height: 740px;
+    h4 {
+      font-weight:bolder;
+      font-size: 2.1rem;
+      padding-bottom: 20px;
+    }
     .collage-left {
       position: absolute;
       top: 0;
