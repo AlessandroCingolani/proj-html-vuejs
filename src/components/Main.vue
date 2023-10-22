@@ -38,7 +38,7 @@ import LatestBlog from './partials/LatestBlog.vue';
     <!-- lavoriamo insieme -->
     <section id="work-together">
       <div class="rotate-text">
-        <h1 class="rotate">Events</h1>
+        <span class="rotate">Events</span>
       </div>
       <div class="ac_sm-container">
         <div class="title-section text-center">
@@ -80,9 +80,8 @@ import LatestBlog from './partials/LatestBlog.vue';
           </div>
           <div class="col-8 h-100 d-flex align-items-center">
             <div class="mail-box">
-              <span>Your e-mail</span>
-                <input type="text">
-                <i class="fa-solid fa-arrow-right-long"></i>
+                <input type="text" placeholder="Your e-mail" style="color:white">
+                <i class="fa-solid fa-arrow-right-long text-end"></i>
             </div>
           </div>
         </div>
@@ -104,10 +103,11 @@ import LatestBlog from './partials/LatestBlog.vue';
       position: relative;
       .rotate-text {
         position: absolute;
-        bottom: 100px;
-        left: 0;
+        bottom: 20%;
+        left: -100px;
+        transform: translate(-50% , -50%);
         transform: rotate(90deg);
-      }
+        }
       .card {
         border: none;
         .card-body{
@@ -131,6 +131,8 @@ import LatestBlog from './partials/LatestBlog.vue';
       }
     }
 
+
+    // newsletter
     #newsletter {
       height: 100px;
       background-color: rgb(36, 65, 134);
@@ -171,11 +173,13 @@ import LatestBlog from './partials/LatestBlog.vue';
           text-shadow: none;
           box-shadow: none;
           outline: none;
-          
+          &::placeholder{
+            color: white;
+          }
         }
         i{
           cursor: pointer;
-          width: 3%;
+          width: 15%;
           font-size: 1.3rem;
         }
         
