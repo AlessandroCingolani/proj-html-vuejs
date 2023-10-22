@@ -16,7 +16,7 @@ import Carousel from './Carousel.vue';
           <h4>Why do people love me?</h4>
         </div>
       <!-- slider -->
-      <div class="row w-100">
+      <div class="row w-100 justify-content-center">
         <Carousel/>
       </div>
     </section>
