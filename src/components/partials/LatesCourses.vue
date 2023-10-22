@@ -30,7 +30,7 @@ import { store } from '../../data/store'
           <Card v-for="(card,index) in store[type]" :key="card.name + index" :cardObj="card"/>
         </div> 
         <div class="text-center"> 
-          <button class="ac_btn"><span>View all courses  <i class="fa-solid fa-arrow-right-long"></i></span></button>
+          <button class="ac_btn transparent"><span>View all courses  <i class="fa-solid fa-arrow-right-long"></i></span></button>
         </div>
       </div>
     </section>
