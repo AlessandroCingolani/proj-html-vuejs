@@ -6,6 +6,14 @@
 
 <template>
   <section id="Jumbo" class="d-flex justify-content-center align-items-center">
+    <div class="toolbar">
+      <ul>
+        <li></li>
+        <li><a href="#"><i class="fa-solid fa-book"></i></a></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
     <div class="collage-left h-100">
       <img class="background" src="/public/images/artist-shape-02.png" alt="artist-shape-02">
       <img class="artist" src="/public/images/artist-hero-image-03.png" alt="artist-hero-image-03">
@@ -33,6 +41,15 @@
 <style lang="scss" scoped>
   @use '../../../scss/partials/general' as *;
   @use '../../../scss/partials/vars' as *;
+
+  .toolbar {
+    background-color: white;
+    width: 40px;
+    position: fixed;
+    top: 200px;
+    right: 0;
+    z-index: 999;
+  }
 
   #Jumbo {
     position: relative;
