@@ -18,10 +18,10 @@ import { store } from '../../data/store';
 </script>
 
 <template>
-  <div class="ac_col">
+  <div :class="{'ac_col': !cardProp, 'col-4': cardProp }">
     
     <div 
-      :class="{'card-blog': !cardProp, 'card': cardProp }"
+      :class="{'card-course': !cardProp, 'card': cardProp }"
       class="h-100"
       >
       <img :src="`/images/${cardObj.imgCourse}`" class="card-img-top" alt="">
@@ -72,7 +72,7 @@ import { store } from '../../data/store';
 }
 
   
-.card-blog {
+.card-course {
     .card-body{
       cursor: pointer;
       .hover-box {
@@ -94,16 +94,55 @@ import { store } from '../../data/store';
 
   // card for latest blog
   .card{
-    .card-body {
-      .title-card {
-        color: gray;
-      }
-      
-      width: 100%;
-      background-color: white;
-      &:hover {
-        cursor: pointer;
+    box-shadow: 5px 10px 18px #88888852;
+    width: 60%;
+    height: 30%;
+      .card-body {
+        width: 100%;
+        .title-card{
+          color: gray;
+        }
+        h6 {
+          font-weight: bolder;
+        }
       }
   }
+
+
+  .col-4 {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    &:first-child {
+      align-self: center;
+    }
+    &:nth-child(2){
+      .card {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        box-shadow: none;
+        .card-body {
+          position: absolute;
+          color: white;
+          width: 100%;
+          bottom: 10px;
+          .title-card {
+            color: white;
+          }
+          h6{
+            font-size: 1.8rem;
+            font-weight: 600;
+          }
+          .info {
+            color: white;
+          }
+        }
+      }
+    }
+    &:nth-child(3){
+      margin-top: 3%;
+    }
+    
   }
 </style>
