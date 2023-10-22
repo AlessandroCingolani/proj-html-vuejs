@@ -45,15 +45,15 @@ import { store } from '../../data/store';
         
           <div
            :class="index === this.carouselIndex  ? 'active' : 'inactive'"
-           class="card h-100">
+           class="card h-100 p-5">
             <h5>{{ card.title }}</h5>
             <p>{{ card.description }}</p>
             <div class="profile d-flex">
-              <div class="avatar">
+              <div class="avatar h-100">
                 <img :src="`/images/${card.imgProfile}`" alt="">
               </div>
-              <div class="profile-data">
-                <h6>{{ card.name }}</h6>
+              <div class="profile-data h-100 d-flex flex-column justify-content-center">
+                <span class="name">{{ card.name }}</span>
                 <span>{{ card.role }}</span>
               </div>
             </div>
@@ -72,7 +72,26 @@ import { store } from '../../data/store';
 
 <style lang="scss" scoped>
 .carousel {
-  width: calc(100% / 3);
+  width: 30%;
+  h5 {
+    font-weight: 600;
+  }
+  p {
+    color: rgb(112, 112, 112);
+  }
+  .profile-data{
+    width: 100%;
+    padding-left: 10px;
+    .name {
+      font-weight: 600;
+      color: black;
+    }
+    span {
+      color: gray;
+      font-size: .9rem;
+    }
+
+  }
   }
 
 .hidden {
