@@ -7,7 +7,6 @@
 <template>
   <footer>
     <div class="ac_md-container p-5">
-
       <div class="row">
         <div class="col-4">
           <h5>Address</h5>
@@ -49,10 +48,11 @@
           </div>
         </div>
       </div>
-      <div class="footer-bottom text-center pt-5">
-        <small>&#169; 2020 Maxcoach. All Rights Reserved</small>
-      </div>
     </div>
+    <div class="footer-bottom w-100 d-flex justify-content-center align-items-center p-5">
+        <small >&#169; 2020 Maxcoach. All Rights Reserved</small>
+        <a class="ac_btn" href="#Header"><i class="fa-solid fa-arrow-up-long"></i></a>
+      </div>
   </footer>
 </template>
 
@@ -60,8 +60,19 @@
 <style lang="scss" scoped>
   @use '../../scss/partials/general'as * ;
   @use '../../scss/partials/vars'as * ;
-  small {
-    color: $social-gray;
+
+  .footer-bottom {
+    small {
+      color: $social-gray;
+    }
+    a {
+      text-align: center;
+      vertical-align: middle;
+      width: 50px;
+      height: 50px;
+      border-radius:50% ;
+      padding: 10px;
+    }
   }
   a {
     color: rgb(104, 105, 105);
