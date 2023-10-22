@@ -21,6 +21,9 @@ import { store } from '../../data/store'
 <template>
   <!-- corsi da fare card da buttare dentro -->
   <section id="artist-coaching">
+      <div class="rotate-text">
+        <span class="rotate">Courses</span>
+      </div>
       <div class="ac_md-container">
         <div class="title-section text-center ">
           <em>{{ title }}</em>
@@ -39,4 +42,19 @@ import { store } from '../../data/store'
 
 <style lang="scss" scoped>
   @use '../../../scss/partials/general'as *;
+
+  #artist-coaching  {
+    position: relative;
+    width: 100%;
+    .rotate-text {
+      position: absolute;
+      transform: rotate(90deg);
+      top: 20%;
+      left: 100%;
+      transform-origin: center;
+      transform-box: fit-self;
+      transform-style: flat;
+      transform-origin: top left;
+    }
+  }
 </style>
