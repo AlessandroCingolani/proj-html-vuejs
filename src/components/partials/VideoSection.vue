@@ -63,19 +63,17 @@
     
     .background {
     width: 100%;
-    height: 300px;
+    height: 500px;
     position: absolute;
-    bottom: -30px;
+    bottom: -31px;
     left: 0;
-    // background-image: url('/public/images/artist-shape-02.png');
-    // background-position-y: bottom;
-    // background-repeat: repeat-x;
-    // transform: rotate(180deg);
-    // background-image: url('/public/images/artist-shape-02.png');
-    // background-repeat: repeat, repeat;
-    // background-size: 200px, 500px;
-    // background-position: 0px 0px, 0px 0px;
-    // background-repeat-x: 0px, 1px;
+    background-image: url('/images/artist-shape-02-768x415.png');
+    background-position-y: bottom;
+    background-repeat: repeat-x;
+    transform: rotate(180deg);
+    background-size: 50% 50%;
+    background-position: 0 0;
+   
   }
    .video-block {
     position: relative;
