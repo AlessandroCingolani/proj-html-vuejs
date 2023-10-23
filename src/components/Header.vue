@@ -137,10 +137,12 @@ import Countdown from './partials/Countdown.vue'
 @use '../../scss/partials/general'as *;
 @use '../../scss/partials/vars' as * ;
 
+.dropdown {
+  margin-right: 40px;
+}
 
 .dropdown:hover>.dropdown-menu {
   display: block;
-  margin-top: 10px;
 }
 
 .dropdown>.dropdown-toggle:active {
@@ -159,7 +161,7 @@ nav {
     width: 160px;
   }
   li {
-    margin-right: 40px;
+    
       i {
       margin-left: 5px;
       font-size: .7rem;
