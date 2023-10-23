@@ -50,5 +50,8 @@
  @use '../../../scss/partials/general' as *;
  @use '../../../scss/partials/vars' as *;
 
+ .timer {
+  font-weight:600 ;
+ }
  
 </style>
