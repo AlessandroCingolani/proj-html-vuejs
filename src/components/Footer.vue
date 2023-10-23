@@ -42,9 +42,9 @@
         <div class="col-4">
           <h5>Instagram <span class="tag">@maxcoach</span></h5>
           <div class="img-block">
-            <img src="/images/120084500_197897808368764_8114555493043279565_n.jpg" alt="">
-            <img src="/images/120012142_177596140500760_8623485824101406058_n.jpg" alt="">
-            <img src="/images/120099363_364334431619755_7198812647386067017_n.jpg" alt="">
+            <a href=""><img src="/images/120084500_197897808368764_8114555493043279565_n.jpg" alt=""></a>
+            <a href=""><img src="/images/120012142_177596140500760_8623485824101406058_n.jpg" alt=""></a>
+            <a href=""><img src="/images/120099363_364334431619755_7198812647386067017_n.jpg" alt=""></a>
           </div>
         </div>
       </div>
