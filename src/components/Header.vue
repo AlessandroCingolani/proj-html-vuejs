@@ -21,7 +21,9 @@ import Countdown from './partials/Countdown.vue'
       <div class="ac_md-container">
         <nav class="d-flex justify-content-between h-100 align-items-center">
 
-          <div><img src="/public/images/dark-logo.png" alt=""></div>
+          <div>
+            <a href="#"><img src="/images/dark-logo.png" alt="MaxCoach"></a>
+          </div>
 
           <!-- Fixare inline block  -->
           <ul class="d-flex h-100 align-items-center ">
