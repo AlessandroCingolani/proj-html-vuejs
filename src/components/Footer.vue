@@ -14,10 +14,10 @@
           <p>+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)</p>
           <p><a href="#">support@maxcoach.com</a></p>
           <div class="social">
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-linkedin"></i>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
           </div>
         </div>
         <div class="col-2">
@@ -76,10 +76,21 @@
   }
   a {
     color: rgb(104, 105, 105);
+    i {
+      &:hover {
+        scale:1.2;
+        color: black;
+      }
+    }
   }
 
   li {
     padding-bottom: 10px;
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 
   h5 {
