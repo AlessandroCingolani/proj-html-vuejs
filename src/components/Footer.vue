@@ -49,10 +49,14 @@
         </div>
       </div>
     </div>
-    <div class="footer-bottom w-100 d-flex justify-content-center align-items-center p-5">
-        <small >&#169; 2020 Maxcoach. All Rights Reserved</small>
+    <div class="footer-bottom d-flex justify-content-between p-5">
+      <div class="copyright ms-auto">
+        <small>&#169; 2020 Maxcoach. All Rights Reserved</small>
+      </div>
+      <div class="anchor ms-auto">
         <a class="ac_btn" href="#Header"><i class="fa-solid fa-arrow-up-long"></i></a>
       </div>
+    </div>
   </footer>
 </template>
 
@@ -71,7 +75,10 @@
       width: 50px;
       height: 50px;
       border-radius:50% ;
-      padding: 10px;
+      padding: 20px;
+      i {
+        font-size: 1.2rem;
+      }
     }
   }
   a {
