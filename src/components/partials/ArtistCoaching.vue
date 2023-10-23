@@ -1,6 +1,9 @@
 <script>
  export default {
-  name:'ArtistCoaching'
+  name:'ArtistCoaching',
+  props:{
+    title:String,
+  },
 }
 </script>
 
@@ -10,7 +13,7 @@
       <div class="container-fluid">
         <div class="ac_sm-container">
           <div class="title-section text-center">
-            <em>Artist coaching</em>
+            <em>{{ title }}</em>
             <h4>I understand what it takes to create.I can help you with</h4>
           </div>
           <div class="row">

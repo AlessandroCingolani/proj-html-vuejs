@@ -24,7 +24,7 @@ import { store } from '../../data/store'
       <div class="ac_sm-container">
         <div class="title-section text-center">
           <em>{{ title }}</em>
-          <h4>Latest From The Blog</h4>
+          <h4 class="mb-4">Latest From The Blog</h4>
         </div>
         <div class="row h-100 ">
           <Card v-for="(card,index) in store[type]" :key="card.name + index" :cardObj="card" :cardProp="true"/>
@@ -45,7 +45,8 @@ import { store } from '../../data/store'
     padding-top: 50px;
     background-color: rgb(245, 247, 250);
     background-image: url('/public/images/maxcoach-shape-03.png');
-    background-position: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
     background-size:contain;
    
     .post-link {

@@ -1,6 +1,9 @@
 <script>
  export default {
-  name:'Jumbotron'
+  name:'Jumbotron',
+  props:{
+    title:String,
+  },
 }
 </script>
 
@@ -23,7 +26,7 @@
     </div>
 
     <div class="artist-jumbo text-center">
-      <em>Hello, Im martin</em>
+      <em>{{ title }}</em>
       <h4>Artist Coaching And Mentoring Might Be for You.</h4>
       <button class="ac_btn"><span>Get started today</span></button>
     </div>
@@ -60,6 +63,12 @@
           display: flex;
           justify-content: center;
           color:rgba(0, 0, 0, 0.691);
+          i {
+            &:hover {
+              scale:1.2;
+              color: black;
+            }
+          }
         }
       }
     }
