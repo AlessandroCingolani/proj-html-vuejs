@@ -165,5 +165,6 @@ export const store = reactive({
       title:'Lorem Ipsum',
       description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum',
     }
-  ]
+  ],
+  newsletter:[]
 })
