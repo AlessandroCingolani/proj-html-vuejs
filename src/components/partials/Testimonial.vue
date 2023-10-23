@@ -28,7 +28,7 @@ import Carousel from './Carousel.vue';
 
 <style lang="scss" scoped>
   #testimonials {
-    background-color: rgb(250, 248, 246);
+    background-color:rgb(254, 250, 247);
       
     }
 </style>
