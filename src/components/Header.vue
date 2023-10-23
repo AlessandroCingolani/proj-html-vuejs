@@ -17,7 +17,7 @@ import Countdown from './partials/Countdown.vue'
       <button class="ac_btn"><span>Get ticket</span></button>
     </div>
 
-    <div class="container-fluid debug-box">
+    <div class="container-fluid nav-bar">
       <div class="ac_md-container">
         <nav class="d-flex justify-content-between h-100 align-items-center">
 
@@ -25,19 +25,103 @@ import Countdown from './partials/Countdown.vue'
 
           <!-- Fixare inline block  -->
           <ul class="d-flex h-100 align-items-center ">
-            <li>Home<i class="fa-solid fa-chevron-down"></i></li>
-            <li>Pages<i class="fa-solid fa-chevron-down"></i></li>
-            <li>Courses<i class="fa-solid fa-chevron-down"></i></li>
-            <li>Features<i class="fa-solid fa-chevron-down"></i></li>
-            <li>Blog<i class="fa-solid fa-chevron-down"></i></li>
-            <li>Shop<i class="fa-solid fa-chevron-down"></i></li>
+            <div class="dropdown">
+              <li
+                type="button"
+                id="dropdownMenuButton"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Home<i class="fa-solid fa-chevron-down"></i>
+              </li>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <li
+                type="button"
+                id="dropdownMenuButton"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Pages<i class="fa-solid fa-chevron-down"></i>
+              </li>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <li
+                type="button"
+                id="dropdownMenuButton"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Courses<i class="fa-solid fa-chevron-down"></i>
+              </li>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <li
+                type="button"
+                id="dropdownMenuButton"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+              >
+              Features<i class="fa-solid fa-chevron-down"></i>
+              </li>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <li
+                type="button"
+                id="dropdownMenuButton"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+              >
+              Blog<i class="fa-solid fa-chevron-down"></i>
+              </li>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <li
+                type="button"
+                id="dropdownMenuButton"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+              >
+              Shop<i class="fa-solid fa-chevron-down"></i>
+              </li>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
           </ul>
 
           <div class="social">
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-linkedin"></i>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
           </div>
 
         </nav>
@@ -53,6 +137,23 @@ import Countdown from './partials/Countdown.vue'
 @use '../../scss/partials/general'as *;
 @use '../../scss/partials/vars' as * ;
 
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+  margin-top: 10px;
+}
+
+.dropdown>.dropdown-toggle:active {
+    pointer-events: none;
+}
+
+.nav-bar {
+  position: sticky;
+  background-color: white;
+  top: 0;
+  z-index: 999;
+}
+
 nav {
   img {
     width: 160px;
@@ -61,14 +162,23 @@ nav {
     margin-right: 40px;
       i {
       margin-left: 5px;
-      font-size: .5rem;
+      font-size: .7rem;
     }
   }
   .social {
-    color: $social-gray;
-    i {
-      padding-right:25px ;
+    a {
+      margin-right:25px ;
+      color: $social-gray;
+      i {
+        &:hover {
+          scale: 1.1;
+          color: $dark-palette;
+        }
+        
+        font-size: 1.2rem;
+      }
     }
+
   }
 }
   .timing-ticket {
