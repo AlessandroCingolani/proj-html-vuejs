@@ -34,7 +34,7 @@ import { store } from '../../data/store';
                 <img :src="`/images/${card.imgCourse}`" class="img-fluid" alt="...">
               </div>
               <div class="col-md-8">
-                <div :class="{'text-end': index >= store.workTogheter.length - 2}" class="card-body ">
+                <div :class="{'text-end': index >= store.workTogheter.length - 2}" class="card-body h-100 d-flex flex-column justify-content-center">
                   <span class="date">{{ card.date }}</span>
                   <h6>{{ card.name }}</h6>
                   <span class="location"><i class="fa-solid fa-location-dot"></i>{{ card.location }}</span>
@@ -65,7 +65,7 @@ import { store } from '../../data/store';
       .card {
         border: none;
         .card-body{
-          padding: 30px 30px;
+          padding: 0 30px;
           .date {
             font-size: .8rem;
             color: rgba(128, 128, 128, 0.644);
