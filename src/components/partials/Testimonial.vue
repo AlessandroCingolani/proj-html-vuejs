@@ -4,7 +4,10 @@ import Carousel from './Carousel.vue';
   name:'Testimonial',
  components:{
     Carousel,
-  }
+  },
+  props:{
+    title:String,
+  },
 }
 </script>
 
@@ -12,7 +15,7 @@ import Carousel from './Carousel.vue';
       <!-- slider da fare componente -->
       <section id="testimonials">
         <div class="title-section text-center ">
-          <em>Testimonials</em>
+          <em>{{ title }}</em>
           <h4>Why do people love me?</h4>
         </div>
       <!-- slider -->
