@@ -18,11 +18,11 @@
       </ul>
     </div>
     <div class="collage-left h-100">
-      <img class="background" src="/public/images/artist-shape-02.png" alt="artist-shape-02">
-      <img class="artist" src="/public/images/artist-hero-image-03.png" alt="artist-hero-image-03">
-      <img class="background-spheres" src="/public/images/artist-shape-03-201x300.png" alt="artist-shape-03">
-      <img class="paint-art" src="/public/images/artist-hero-image-02.jpg" alt="artist-hero-image-02">
-      <img class="artist-hero" src="/public/images/artist-hero-image-01.jpg" alt="artist-hero-image-01">
+      <img class="background" src="/images/artist-shape-02.png" alt="artist-shape-02">
+      <img class="artist" src="/images/artist-hero-image-03.png" alt="artist-hero-image-03">
+      <img class="background-spheres" src="/images/artist-shape-03-201x300.png" alt="artist-shape-03">
+      <img class="paint-art" src="/images/artist-hero-image-02.jpg" alt="artist-hero-image-02">
+      <img class="artist-hero" src="/images/artist-hero-image-01.jpg" alt="artist-hero-image-01">
     </div>
 
     <div class="artist-jumbo text-center">
@@ -31,11 +31,11 @@
       <button class="ac_btn"><span>Get started today</span></button>
     </div>
     <div class="collage-right h-100">
-      <img class="background" src="/public/images/artist-shape-01-600x577.png" alt="artist-shape-01">
-      <img class="artist" src="/public/images/artist-hero-image-04.jpg" alt="artist-hero-image-04">
-      <img class="feather" src="/public/images/artist-shape-04.png" alt="artist-shape-04.png">
-      <img class="paint" src="/public/images/artist-shape-05.png" alt="artist-shape-05.png">
-      <img class="max-coach" src="/public/images/maxcoach-shape-12-150x150.png" alt="artist-shape-05.png">
+      <img class="background" src="/images/artist-shape-01-600x577.png" alt="artist-shape-01">
+      <img class="artist" src="/images/artist-hero-image-04.jpg" alt="artist-hero-image-04">
+      <img class="feather" src="/images/artist-shape-04.png" alt="artist-shape-04.png">
+      <img class="paint" src="/images/artist-shape-05.png" alt="artist-shape-05.png">
+      <img class="max-coach" src="/images/maxcoach-shape-12-150x150.png" alt="artist-shape-05.png">
     </div>
   </section>
 </template>

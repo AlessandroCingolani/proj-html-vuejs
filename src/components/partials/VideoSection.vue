@@ -28,11 +28,11 @@
           <!-- mettere poi icona youtube e decorazioni in absolute -->
           <div class="video-block">
             <div class="collage">
-              <img class="shape-12" src="/public/images/maxcoach-shape-12-150x150.png" alt="">
-              <img class="shape-5" src="/public/images/maxcoach-shape-05.png" alt="">
+              <img class="shape-12" src="/images/maxcoach-shape-12-150x150.png" alt="">
+              <img class="shape-5" src="/images/maxcoach-shape-05.png" alt="">
             </div>
-            <img class="video" src="/public/images/artist-video-poster.jpg" alt="">
-            <img class="youtube" src="/public/images/icon-youtube-play.png" alt="">
+            <img class="video" src="/images/artist-video-poster.jpg" alt="">
+            <img class="youtube" src="/images/icon-youtube-play.png" alt="">
           </div>
           <div class="background">
 

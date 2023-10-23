@@ -46,7 +46,7 @@ import { store } from '../../data/store'
   #artist-coaching  {
     position: relative;
     width: 100%;
-    background-image: url('/public/images/artist-shape-01.png');
+    background-image: url('/images/artist-shape-01.png');
     background-position-y: center;
     background-repeat: no-repeat;   
     .rotate-text {

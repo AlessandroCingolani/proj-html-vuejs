@@ -18,22 +18,22 @@
           </div>
           <div class="row">
             <div class="col">
-              <img src="/public/images/artist-box-image-01.png" alt="">
+              <img src="/images/artist-box-image-01.png" alt="">
               <h6>Online Courses</h6>
               <p>Online art coaching now offers you a very powerful way to redesign your artist mind.</p>
             </div>
             <div class="col">
-              <img src="/public/images/artist-box-image-02.png" alt="">
+              <img src="/images/artist-box-image-02.png" alt="">
               <h6 class="pt-3">One to One</h6>
               <p>Getting the necessary clarity about the current state to help you improve your ability.</p>
             </div>
             <div class="col">
-              <img src="/public/images/artist-box-image-03.png" alt="">
+              <img src="/images/artist-box-image-03.png" alt="">
               <h6>Anywhere</h6>
               <p>Access to valuable and portable program which allow you to setup and live anywhere you want.</p>
             </div>
             <div class="col">
-              <img src="/public/images/artist-box-image-04.png" alt="">
+              <img src="/images/artist-box-image-04.png" alt="">
               <h6>On Time</h6>
               <p>Punctuality is our top priority because it's an essential criteria to assess a program quality.</p>
             </div> 
@@ -50,7 +50,7 @@
  @use '../../../scss/partials/vars' as *;
 
   #artist-coaching {
-    background-image: url('/public/images/maxcoach-shape-14-1536x343.png');
+    background-image: url('/images/maxcoach-shape-14-1536x343.png');
     background-position: center;
     background-size: cover;
     h6 {

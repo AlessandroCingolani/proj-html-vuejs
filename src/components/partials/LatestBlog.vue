@@ -44,7 +44,7 @@ import { store } from '../../data/store'
   section {
     padding-top: 50px;
     background-color: rgb(245, 247, 250);
-    background-image: url('/public/images/maxcoach-shape-03.png');
+    background-image: url('/images/maxcoach-shape-03.png');
     background-position-y: center;
     background-repeat: no-repeat;
     background-size:contain;
